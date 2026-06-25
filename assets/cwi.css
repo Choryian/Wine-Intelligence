@@ -101,6 +101,14 @@ a.promo:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(40,12,12,.1
 .about .box{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:22px 24px;}
 .about .box h3{margin:0 0 8px;font-size:16px;color:var(--burgundy);}
 .about .box p{font-size:14px;margin:0;}
+/* 원형 아카이브(블로그) 링크 */
+.about .origin{display:inline-flex;flex-direction:column;gap:5px;text-decoration:none;margin:24px 0 4px;
+  border:1px solid var(--wine-gold);border-radius:11px;padding:16px 24px;background:#fff;
+  transition:background .18s,box-shadow .18s,transform .18s;}
+.about .origin:hover{background:#faf5ec;box-shadow:0 10px 26px rgba(40,12,12,.12);transform:translateY(-2px);}
+.about .origin .origin-lead{font-family:'Noto Serif KR',serif;font-size:15px;color:var(--burgundy-soft);letter-spacing:-.2px;}
+.about .origin .origin-name{font-size:14px;font-weight:700;color:var(--burgundy);}
+.about .origin .origin-name .arrow{color:var(--wine-gold);}
 
 /* ── Footer ── */
 footer.site{background:var(--burgundy-deep);color:var(--cream-dim);text-align:center;padding:40px 24px;font-size:13.5px;}
