@@ -15,7 +15,7 @@
     '#cwi-site-header *{box-sizing:border-box;}' +
     '.cwi-header-inner{max-width:1180px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}' +
     '.cwi-brand{display:flex;align-items:center;gap:12px;text-decoration:none;}' +
-    '.cwi-brand-mark{width:38px;height:38px;border-radius:6px;background:#c9a55b;color:#2a0c0c;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;letter-spacing:.5px;flex:0 0 auto;}' +
+    '.cwi-brand-mark{width:40px;height:40px;flex:0 0 auto;display:block;}' +
     '.cwi-brand-title{font-weight:700;font-size:15px;letter-spacing:-.2px;color:#f7f0e4;line-height:1.2;}' +
     '.cwi-brand-sub{font-size:11px;color:#c9a55b;letter-spacing:.3px;}' +
     '.cwi-nav{display:flex;gap:4px;align-items:center;}' +
@@ -33,7 +33,11 @@
   header.innerHTML = '' +
     '<div class="cwi-header-inner">' +
       '<a class="cwi-brand" href="' + ROOT + '">' +
-        '<div class="cwi-brand-mark">CWI</div>' +
+        '<svg class="cwi-brand-mark" viewBox="0 0 100 100" aria-hidden="true">' +
+          '<circle cx="50" cy="50" r="46" fill="#4d1717" stroke="#c9a55b" stroke-width="2.5"/>' +
+          '<circle cx="50" cy="50" r="39" fill="none" stroke="#e6cd91" stroke-width="0.8"/>' +
+          '<text x="50" y="60" text-anchor="middle" fill="#f7f0e4" font-size="25" font-weight="600" font-family="Georgia, serif">C&amp;R</text>' +
+        '</svg>' +
         '<div>' +
           '<div class="cwi-brand-title">C&amp;R Wine Intelligence</div>' +
           '<div class="cwi-brand-sub">읽는 분석으로 마시는 감성을 높이자</div>' +

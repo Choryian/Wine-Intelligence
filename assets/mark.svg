@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="C&R Wine Intelligence">
+  <circle cx="50" cy="50" r="47" fill="#2a0c0c" stroke="#c9a55b" stroke-width="3"/>
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#e6cd91" stroke-width="1"/>
+  <text x="50" y="62" text-anchor="middle" fill="#f7f0e4" font-size="29" font-weight="600" font-family="Georgia,'Times New Roman',serif">C&amp;R</text>
+</svg>
