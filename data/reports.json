@@ -1,0 +1,30 @@
+{
+  "site": "C&R Wine Intelligence",
+  "motto": "읽는 분석으로 마시는 감성을 높이자",
+  "reports": [
+    {
+      "id": "2026-06-24-korea-wine-import-2026h1-review",
+      "title": "팬데믹 버블과 그 이후 — 수요가 올린 천장, 수요가 거둔 천장",
+      "summary": "한국 와인수입 시장 10년 구조 분석과 2026년 상반기 리뷰. 검색(수요)이 통관을 5개월 선행하며, 코로나 천장은 수요가 올렸고 수요가 식자 베이스라인 아래로 회귀했다.",
+      "engine": "intelligence",
+      "series": "market",
+      "category": "Market Intelligence",
+      "date": "2026-06-24",
+      "path": "intelligence/2026-06-24-korea-wine-import-2026h1-review.html",
+      "tags": ["와인수입", "시장분석", "관세청·DART", "사이클"]
+    },
+    {
+      "id": "2017-11-14-lafon-rochet-first-love",
+      "title": "와인은 이야기를 만들고 추억으로 마시는 술 — 나의 첫 사랑, Château Lafon-Rochet",
+      "summary": "첫 사랑 같은 와인, 샤또 라퐁로쉐. 와인은 알코올이 아니라 사람과 시간을 담아 두는 그릇이다. 2017년 와인오케이닷컴 칼럼을 사진과 시를 곁들여 다시 싣다. AI 에이전트 Rochet의 이름이 태어난 글.",
+      "engine": "wineality",
+      "series": "essay",
+      "category": "Wine Essay",
+      "date": "2017-11-14",
+      "path": "wineality/2017-11-14-lafon-rochet-first-love.html",
+      "image": "wineality/images/lafon-rochet-2001.jpg",
+      "tags": ["와인에세이", "보르도", "라퐁로쉐", "추억"]
+    }
+  ],
+  "events": []
+}

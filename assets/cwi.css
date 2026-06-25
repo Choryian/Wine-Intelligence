@@ -1,0 +1,114 @@
+/* C&R Wine Intelligence — 공통 스타일시트 (랜딩 + 아카이브 공용) */
+:root{
+  --burgundy:#4d1717; --burgundy-deep:#2a0c0c; --burgundy-soft:#6e2828;
+  --wine-gold:#c9a55b; --wine-gold-soft:#e6cd91;
+  --cream:#f7f0e4; --cream-dim:#d9cdb8;
+  --paper:#fbf7ef; --ink:#1e1818; --ink-soft:#4a3f3a; --muted:#8a7f78; --rule:#e6dccb;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.8; font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+/* ── Top bar (정적, 랜딩용) ── */
+.topbar{position:sticky;top:0;z-index:50;background:var(--burgundy-deep);border-bottom:1px solid var(--burgundy);}
+.topbar-inner{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.tb-brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.tb-mark{width:38px;height:38px;border-radius:6px;background:var(--wine-gold);color:var(--burgundy-deep);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;letter-spacing:.5px;}
+.tb-title{font-weight:700;font-size:15px;color:var(--cream);line-height:1.2;}
+.tb-sub{font-size:11px;color:var(--wine-gold);letter-spacing:.3px;}
+.tb-nav{display:flex;gap:4px;flex-wrap:wrap;}
+.tb-nav a{padding:8px 13px;border-radius:4px;color:var(--cream-dim);font-weight:500;font-size:14px;text-decoration:none;white-space:nowrap;}
+.tb-nav a:hover{background:var(--burgundy);color:var(--cream);}
+
+/* ── Hero ── */
+.hero{background:linear-gradient(165deg,var(--burgundy-deep) 0%,var(--burgundy) 70%,var(--burgundy-soft) 100%);color:var(--cream);padding:72px 0 64px;text-align:center;}
+.hero .kicker{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--wine-gold-soft);letter-spacing:.5px;margin-bottom:14px;}
+.hero h1{font-family:'Noto Serif KR',serif;font-weight:700;font-size:clamp(28px,5vw,46px);line-height:1.35;margin:0 0 22px;letter-spacing:-.5px;}
+.hero h1 .hl{color:var(--wine-gold-soft);}
+.hero .lead{max-width:660px;margin:0 auto;color:var(--cream-dim);font-size:16.5px;}
+.hero .flow{display:inline-flex;align-items:center;gap:14px;margin-top:26px;font-size:14px;color:var(--cream);flex-wrap:wrap;justify-content:center;}
+.hero .flow b{color:var(--wine-gold-soft);}
+.hero .flow .arrow{color:var(--wine-gold);font-size:18px;}
+
+/* ── Section ── */
+.sec{padding:58px 0;border-bottom:1px solid var(--rule);}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+.sec-tag{display:inline-block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--burgundy-soft);}
+.sec h2{font-family:'Noto Serif KR',serif;font-size:27px;font-weight:700;margin:6px 0 8px;letter-spacing:-.3px;}
+.sec .sec-desc{color:var(--ink-soft);max-width:680px;margin:0 0 28px;}
+.sec .sec-desc .eng{color:var(--burgundy);font-weight:600;}
+.see-all{font-size:14px;font-weight:600;color:var(--burgundy);text-decoration:none;white-space:nowrap;padding-bottom:10px;}
+.see-all:hover{color:var(--wine-gold);}
+
+/* ── Report grid + card (세로형, 그리드 친화) ── */
+.report-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--rule);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:0 1px 2px rgba(40,12,12,.04);}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(40,12,12,.13);border-color:var(--wine-gold);}
+.card .photo{height:180px;background-size:cover;background-position:center;}
+.card .body{padding:24px 26px;display:flex;flex-direction:column;flex:1;}
+.card .cmeta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted);margin-bottom:10px;flex-wrap:wrap;}
+.card .cat{background:var(--burgundy);color:var(--cream);padding:3px 10px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.3px;}
+.card .cat.wine{background:var(--wine-gold);color:var(--burgundy-deep);}
+.card .newbadge{background:#b3402e;color:#fff;padding:2px 8px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.4px;}
+.card .ctitle{font-family:'Noto Serif KR',serif;font-size:20px;font-weight:700;line-height:1.4;margin:0 0 8px;letter-spacing:-.3px;}
+.card .csub{color:var(--ink-soft);font-size:14px;margin:0 0 14px;}
+.card .ctags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;}
+.card .ctag{font-size:11.5px;color:var(--burgundy-soft);background:#f4ecec;padding:3px 9px;border-radius:4px;}
+.card .more{margin-top:14px;font-size:13.5px;color:var(--burgundy);font-weight:600;}
+
+/* ── Promo / 함께하는 와인 ── */
+.promo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;}
+.promo{position:relative;background:#fff;border:1px solid var(--rule);border-top:3px solid var(--wine-gold);border-radius:12px;padding:24px 26px;text-decoration:none;color:inherit;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(40,12,12,.04);transition:transform .18s,box-shadow .18s;}
+a.promo:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(40,12,12,.13);}
+.promo .ptype{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.3px;color:var(--burgundy-deep);background:var(--wine-gold-soft);padding:3px 10px;border-radius:999px;margin-bottom:12px;align-self:flex-start;}
+.promo .ptype.pick{background:var(--burgundy);color:var(--cream);}
+.promo .ptitle{font-family:'Noto Serif KR',serif;font-size:19px;font-weight:700;line-height:1.4;margin:0 0 12px;letter-spacing:-.3px;}
+.promo .pmeta{font-size:13px;color:var(--ink-soft);margin:0 0 6px;display:flex;gap:8px;align-items:baseline;}
+.promo .pmeta .k{color:var(--burgundy-soft);font-weight:600;flex:0 0 56px;}
+.promo .pdesc{font-size:14px;color:var(--ink-soft);margin:12px 0 18px;}
+.promo .cta{margin-top:auto;align-self:flex-start;background:var(--burgundy);color:var(--cream);font-size:13.5px;font-weight:600;padding:9px 18px;border-radius:6px;}
+.promo .cta:hover{background:var(--burgundy-soft);}
+/* Coming Soon 빈 박스 */
+.promo.coming{border-top:3px solid var(--cream-dim);background:#faf5ec;box-shadow:none;cursor:default;}
+.promo.coming:hover{transform:none;box-shadow:none;}
+.promo .cdesc{font-size:14px;color:var(--ink-soft);margin:0 0 18px;}
+.promo .soon{margin-top:auto;align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:.4px;color:var(--wine-gold);border:1px dashed var(--wine-gold);border-radius:999px;padding:3px 11px;}
+
+/* ── Archive toolbar (필터·검색) ── */
+.archive-hero{background:var(--burgundy-deep);color:var(--cream);padding:48px 0 40px;}
+.archive-hero .kicker{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--wine-gold-soft);}
+.archive-hero h1{font-family:'Noto Serif KR',serif;font-size:32px;font-weight:700;margin:6px 0 8px;}
+.archive-hero p{color:var(--cream-dim);margin:0;max-width:680px;font-size:15px;}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:34px 0 26px;}
+.filters{display:flex;gap:8px;flex-wrap:wrap;}
+.chip{border:1px solid var(--rule);background:#fff;color:var(--ink-soft);padding:7px 15px;border-radius:999px;font-size:13.5px;font-weight:500;cursor:pointer;transition:all .15s;}
+.chip:hover{border-color:var(--wine-gold);}
+.chip.active{background:var(--burgundy);color:var(--cream);border-color:var(--burgundy);}
+.search input{border:1px solid var(--rule);border-radius:8px;padding:9px 14px;font-size:14px;width:240px;max-width:48vw;background:#fff;color:var(--ink);font-family:inherit;}
+.search input:focus{outline:none;border-color:var(--wine-gold);}
+.count-line{font-size:13px;color:var(--muted);margin:0 0 18px;}
+.empty{padding:64px 24px;text-align:center;color:var(--muted);border:1px dashed var(--cream-dim);border-radius:12px;background:#faf5ec;}
+
+/* ── About ── */
+.about p{color:var(--ink-soft);max-width:760px;}
+.about .three{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:24px;}
+.about .box{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:22px 24px;}
+.about .box h3{margin:0 0 8px;font-size:16px;color:var(--burgundy);}
+.about .box p{font-size:14px;margin:0;}
+
+/* ── Footer ── */
+footer.site{background:var(--burgundy-deep);color:var(--cream-dim);text-align:center;padding:40px 24px;font-size:13.5px;}
+footer.site .orn{display:block;color:var(--wine-gold);font-size:15px;margin-bottom:12px;letter-spacing:4px;}
+footer.site strong{color:var(--cream);}
+footer.site .small{font-size:12px;color:var(--muted);margin-top:8px;}
+
+@media (max-width:720px){
+  .about .three{grid-template-columns:1fr;}
+  .tb-sub{display:none;}
+}
